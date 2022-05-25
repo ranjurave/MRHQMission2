@@ -2,11 +2,13 @@ body{
     font-family: 'Courier New', Courier, monospace;
     margin: 0%;
     background-color: #460729;
+    padding: 0.5% 5% 0.5% 5%;
+    color: white;
 }
 .ProfileName{
     margin-left: 0.5%;
     font-size: 30px;
-    padding: 0.5% 0% 0.5% 5%;
+    
 }
 .navbar{
     color: #f1d5e4;
@@ -30,30 +32,124 @@ body{
     margin-right: 0.5%;
     display: flex;
     justify-content:space-evenly;
-    padding: 50px;
 }
 .profileImage{
-    width: 25%;
+    border-radius: 4px;
+    padding: 10px;
+    width: 50%;
 }
 .profileText{
     color: tomato;
     padding-right: 10%;
 }
-.aboutSection{
+.about_icons{
+    display: flex;
+    flex-direction: column;
+
+}
+i{
+    color: white;
+}
+.personal_details{ 
+    display: inline-block; 
+    width: 100px; 
+}
+.section{
     display: flex;
     justify-content:center;
-    padding: 0%;
+    padding-bottom: 15px;
+    border-top: #04AA6D solid 5px;
 }
 .about_detail{
     display: flex;
     flex-direction: row;
 }
 .profileImage_detail{
-    width: 25%;
+    border-radius: 4px;
+    padding: 10px;
+    width: 50%;
 }
 .profileText_detail{
     color: white;
+    width: 50%;
+    padding: 30px;
 }
 .profileText_detail ul{
     list-style: none;
+}
+.cvButton{
+    border:#952661 solid 5px;
+    color: rgb(70, 8, 25);
+    background-color: #ffe2e7 ;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+.cvButton:hover{
+    background-color: #cf969f ;
+}
+.section div h1{
+    text-align: center;
+}
+#section_heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.individual_section{
+    display: flex;
+    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.education{
+    margin: 5px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border: #ffe2e7 solid 2px;
+    border-radius: 6px;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.education h2{
+    color: aquamarine;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 5px;
+}
+.works{
+    margin: 5px;
+    width: 450px;
+    height: 300px;
+    text-align: center;
+    border: #ffe2e7 solid 2px;
+    border-radius: 6px;
+    padding: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact_form{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+.name_email_subject{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+
+}
+.submit_button{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }
