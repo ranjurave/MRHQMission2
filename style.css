@@ -93,7 +93,7 @@ i{
 .section div h1{
     text-align: center;
 }
-#section_heading{
+#id_education #id_works #id_contact #id_about{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -115,19 +115,27 @@ i{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .education h2{
-    color: aquamarine;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 5px;
 }
 .works{
-    margin: 5px;
-    width: 450px;
-    height: 300px;
+    position: relative;
     text-align: center;
-    border: #ffe2e7 solid 2px;
+    color: white;
+    margin: 5px;
+    width: 430px;
+    height: 242px;
+    text-align: center;
     border-radius: 6px;
     padding: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.works_text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0%;
 }
 .contact_form{
     display: flex;
