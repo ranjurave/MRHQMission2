@@ -1,9 +1,4 @@
-// const hi_text = document.getElementById('hi');
-// const ranju_text = document.getElementById('IamRanju');
 const intro_text = document.getElementById('selfIntro');
-// const strHiText = hi_text.textContent;
-// const strRanjuText = ranju_text.textContent;
-// const strIntroText = intro_text.textContent;
 const strText = intro_text.textContent;
 const splitText = strText.split("");
 intro_text.textContent="";

@@ -34,29 +34,45 @@ body{
     justify-content:space-evenly;
 }
 .profileImage{
-    border-radius: 4px;
-    padding: 10px;
-    width: 50%;
+    padding: 5%;
+    width: 100%;
 }
 .profileText{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: tomato;
     padding-right: 10%;
+}
+.profileText h3{
+    font-size: 20px;
+}
+.profileText h2{
+    font-size: 60px;
+}
+.profileText h4{
+    font-size: 30px;
 }
 .about_icons{
     display: flex;
     flex-direction: column;
-
+    padding: 5%;
 }
 i{
     color: white;
 }
-.personal_details{ 
+.personal_details{
     display: inline-block; 
-    width: 100px; 
+    width: 130px;
+    color: white;
 }
 .section{
     display: flex;
-    justify-content:center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-top: #04AA6D solid 5px;
+}
+.center_section{
+    display: flex;
+    justify-content: center;
     padding-bottom: 15px;
     border-top: #04AA6D solid 5px;
 }
@@ -66,13 +82,17 @@ i{
 }
 .profileImage_detail{
     border-radius: 4px;
-    padding: 10px;
-    width: 50%;
+    padding: 5%;
+    width: 30%;
 }
 .profileText_detail{
     color: white;
     width: 50%;
-    padding: 30px;
+    padding: 50px;
+    font-size: 20px;
+}
+.profileText_detail span{
+    opacity: 1;
 }
 .profileText_detail ul{
     list-style: none;
@@ -170,4 +190,8 @@ span{
 
 span.fade{
     opacity: 1;
+}
+
+.divSocial{
+    font-size: 30px;
 }
