@@ -1,9 +1,9 @@
 body{
     font-family: 'Courier New', Courier, monospace;
     margin: 0%;
-    background-color: #460729;
+    background-color: #101a1e;
     padding: 0.5% 5% 0.5% 5%;
-    color: white;
+    color: #1dc9be;
 }
 .ProfileName{
     margin-left: 0.5%;
@@ -11,7 +11,6 @@ body{
     
 }
 .navbar{
-    color: #f1d5e4;
     display: flex;
     justify-content: space-between;
     justify-items: center;
@@ -19,19 +18,19 @@ body{
     padding-bottom: 20px;
 }
 .navbar a{
+    color:white;
     height: 50%;
     text-decoration: none;
-    color: white;
     padding: 10px;
     font-size: 25px;
     font-weight: bold;
     padding-left: 20px;
 }
 .navbar a:hover{
-    color: white;
+    color:#1dc9be;
     font-size: 30px;
     font-weight: bolder;
-    background-color: #952661;
+    background-color: #1b2d43;
 }
 .nav_links{
     margin: auto;
@@ -64,26 +63,26 @@ i{
     color: white;
 }
 i:hover{
-    color: #04AA6D;
+    color: #1dc9be;
     font-size: 65px;
 }
 
 .personal_details{
     display: inline-block; 
     width: 150px;
-    color: white;
+    color: #1dc9be;
 }
 .section{
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
-    border-top: #04AA6D solid 5px;
+    border-top: #1dc9be solid 5px;
 }
 .center_section{
     display: flex;
     justify-content: center;
     padding-bottom: 15px;
-    border-top: #04AA6D solid 5px;
+    border-top: #1dc9be solid 5px;
 }
 .about_detail{
     display: flex;
@@ -95,7 +94,7 @@ i:hover{
     width: 30%;
 }
 .profileText_detail{
-    color: white;
+    color: #1dc9be;
     width: 50%;
     padding: 50px;
     font-size: 20px;
@@ -107,9 +106,9 @@ i:hover{
     list-style: none;
 }
 .cvButton{
-    border:#952661 solid 5px;
-    color: rgb(70, 8, 25);
-    background-color: #ffe2e7 ;
+    border:#1dc9be solid 5px;
+    color: white;
+    background-color: #0e0f13 ;
     padding: 15px 32px;
     text-align: center;
     font-size: 16px;
@@ -117,7 +116,9 @@ i:hover{
     border-radius: 6px;
 }
 .cvButton:hover{
-    background-color: #cf969f ;
+    border:#23b1a8 solid 5px;
+    color: #1b2d43;
+    background-color: #1dc9be ;
 }
 .section div h1{
     text-align: center;
@@ -138,7 +139,7 @@ i:hover{
     width: 300px;
     height: 300px;
     text-align: center;
-    border: #ffe2e7 solid 2px;
+    border: #1dc9be solid 2px;
     border-radius: 6px;
     padding: 15px;
     font-size: 20px;
@@ -149,9 +150,9 @@ i:hover{
     font-weight: 5px;
 }
 .education:hover{
-    border: #ffe2e7 solid 4px;
-    font-size: 22px;
-    color: #cf969f;
+    border: #60fcf1 solid 4px;
+    font-size: 21px;
+    color: #60fcf1;
 }
 .works{
     position: relative;
@@ -190,9 +191,9 @@ i:hover{
 
 }
 .submit_button{
-    background-color: #04AA6D;
+    background-color: #1dc9be;
     border: none;
-    color: white;
+    color: #0e0f13;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
