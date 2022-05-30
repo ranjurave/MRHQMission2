@@ -1,3 +1,4 @@
+//name animation
 const intro_text = document.getElementById('selfIntro');
 const strText = intro_text.textContent;
 const splitText = strText.split("");
@@ -24,6 +25,7 @@ function complete(){
     timer = null;
 }
 
+//Mouse over behaviour for works
 function WorkMouseOver(works){
     works.children[0].style.opacity = '50%';
     works.children[1].style.opacity = '100%';
@@ -32,3 +34,13 @@ function WorkMouseOut(works){
     works.children[0].style.opacity = '100%';
     works.children[1].style.opacity = '0%';
 }
+
+// Smooth scroll to the sections of the page
+document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
+    anchor.addEventListener('click', function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior:"smooth"
+        });
+    });
+});
