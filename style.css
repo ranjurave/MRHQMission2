@@ -1,8 +1,9 @@
+* {
+    box-sizing: border-box ;
+}
 body{
     font-family: 'Courier New', Courier, monospace;
-    margin: 0%;
-    background-color: #101a1e;
-    padding: 0.5% 5% 0.5% 5%;
+    background-color: #1d2a36;
     color: #1dc9be;
 }
 .ProfileName{
@@ -11,11 +12,11 @@ body{
     
 }
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 100%;
+    top: 0%;
+    background-color: #091422; 
+    position: fixed;
+    border-bottom: #1dc9be solid 5px;
 }
 .navbar a{
     color:white;
@@ -30,13 +31,15 @@ body{
     color:#1dc9be;
     font-size: 30px;
     font-weight: bolder;
-    background-color: #1b2d43;
+    background-color: #2e4665;
 }
 .nav_links{
-    margin: auto;
-    margin-right: 0.5%;
+    margin-top: 1%;
+    margin-right: 5%;
+    margin-bottom: 1%;
+    
     display: flex;
-    justify-content:space-evenly;
+    justify-content:flex-end;
 }
 .profileImage{
     padding: 5%;
@@ -76,7 +79,7 @@ i:hover{
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
-    border-top: #1dc9be solid 5px;
+    border-bottom: #1dc9be solid 5px;
 }
 .center_section{
     display: flex;
@@ -133,6 +136,8 @@ i:hover{
     align-content: stretch;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .education{
     margin: 5px;
@@ -178,7 +183,7 @@ i:hover{
 .contact_form{
     display: flex;
     flex-direction: column;
-    width: 700px;
+
 }
 .name_email_subject{
     display: flex;
@@ -211,4 +216,13 @@ span.fade{
 
 .divSocial{
     font-size: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+    .section{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column ;
+    }
 }
