@@ -15,17 +15,23 @@ body{
     display: flex;
     justify-content: space-between;
     justify-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .navbar a{
     height: 50%;
     text-decoration: none;
     color: white;
     padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
 }
 .navbar a:hover{
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bolder;
+    background-color: #952661;
 }
 .nav_links{
     margin: auto;
@@ -40,16 +46,14 @@ body{
 .profileText{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: tomato;
-    padding-right: 10%;
+    
+    width: 600px;
 }
 .profileText h3{
-    font-size: 20px;
+    font-size: 30px;
 }
 .profileText h2{
-    font-size: 60px;
-}
-.profileText h4{
-    font-size: 30px;
+    font-size: 50px;
 }
 .about_icons{
     display: flex;
@@ -59,9 +63,14 @@ body{
 i{
     color: white;
 }
+i:hover{
+    color: #04AA6D;
+    font-size: 65px;
+}
+
 .personal_details{
     display: inline-block; 
-    width: 130px;
+    width: 150px;
     color: white;
 }
 .section{
@@ -139,6 +148,11 @@ i{
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight: 5px;
 }
+.education:hover{
+    border: #ffe2e7 solid 4px;
+    font-size: 22px;
+    color: #cf969f;
+}
 .works{
     position: relative;
     text-align: center;
@@ -157,7 +171,9 @@ i{
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0%;
+    font-size: 20px;
 }
+
 .contact_form{
     display: flex;
     flex-direction: column;
@@ -165,7 +181,7 @@ i{
 }
 .name_email_subject{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-between;
     padding-bottom: 15px;
 }
 .message{
