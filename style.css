@@ -1,12 +1,16 @@
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: #1d2a36;
     color: #1dc9be;
+    margin: 0%;
 }
-.ProfileName{
-    margin-left: 0.5%;
-    font-size: 30px;
-    
+hr {
+    position: relative;
+    top: 20px;
+    border: none;
+    height: 5px;
+    background: #1dc9be;
+    margin-bottom: 5px;
 }
 .navbar{
     width: 100%;
@@ -14,6 +18,7 @@ body{
     background-color: #091422; 
     position: fixed;
     border-bottom: #1dc9be solid 5px;
+    z-index:300;
 }
 .navbar a{
     color:white;
@@ -38,51 +43,59 @@ body{
     display: flex;
     justify-content:flex-end;
 }
-.profileImage{
-    padding: 5%;
-    width: 100%;
-}
 .profileText{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: tomato;
-    
-    width: 600px;
-}
-.profileText h3{
-    font-size: 30px;
-}
-.profileText h2{
-    font-size: 50px;
-}
-.about_icons{
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: tomato;
+    padding: 0%;
+    width: 600px;
+    margin-top: 20%;
+    margin-left: 10%;
+}
+.profileText h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #1dc9be;
+    margin: 0%;
+}
+.profileText h2{
+    margin: 0%;
+    font-size: 50px;
+}
+.profileText div{
+    display: flex;
+    font-size: 30px;
 }
 i{
     color: white;
+    padding: 10px;
 }
 i:hover{
     color: #1dc9be;
     font-size: 65px;
 }
-
+.profileImage{
+    width: 500px;
+    padding-top: 120px;
+}
 .personal_details{
     display: inline-block; 
     width: 150px;
     color: #1dc9be;
 }
 .section{
+    margin-right: 5%;
+    margin-left: 5%;
     display: flex;
     justify-content: space-between;
     padding-bottom: 15px;
-    border-bottom: #1dc9be solid 5px;
+    /* border-bottom: #1dc9be solid 5px; */
 }
 .center_section{
     display: flex;
     justify-content: center;
     padding-bottom: 15px;
-    border-top: #1dc9be solid 5px;
 }
 .about_detail{
     display: flex;
@@ -178,7 +191,6 @@ i:hover{
     opacity: 0%;
     font-size: 20px;
 }
-
 .contact_form{
     display: flex;
     flex-direction: column;
@@ -203,18 +215,12 @@ i:hover{
     margin: 4px 2px;
     cursor: pointer;
 }
-
 span{
     opacity: 0;
     transition: all 0.4s ease;
 }
-
 span.fade{
     opacity: 1;
-}
-
-.divSocial{
-    font-size: 30px;
 }
 
 @media screen and (max-width: 1024px) {
