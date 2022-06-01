@@ -1,28 +1,31 @@
 //name animation
-const intro_text = document.getElementById('selfIntro');
-const strText = intro_text.textContent;
-const splitText = strText.split("");
-intro_text.textContent="";
+window.onload = nameAnimation();
+function nameAnimation(){
+    const intro_text = document.getElementById('selfIntro');
+    const strText = intro_text.textContent;
+    const splitText = strText.split("");
+    intro_text.textContent="";
 
-for(let i = 0; i < splitText.length; i++){
-    intro_text.innerHTML += '<span>'+splitText[i]+'<span>'
-}
-
-let char = 0;
-let timer = setInterval(onTick, 50);
-function onTick(){
-    const span = intro_text.querySelectorAll('span')[char];
-    span.classList.add('fade');
-    char++;
-    if(char>=splitText.length*2){
-        complete();
-        return;        
+    for(let i = 0; i < splitText.length; i++){
+        intro_text.innerHTML += '<span>'+splitText[i]+'<span>'
     }
-}
 
-function complete(){
-    clearInterval(timer);
-    timer = null;
+    let char = 0;
+    let timer = setInterval(onTick, 50);
+    function onTick(){
+        const span = intro_text.querySelectorAll('span')[char];
+        span.classList.add('fade');
+        char++;
+        if(char>=splitText.length*2){
+            complete();
+            return;        
+        }
+    }
+
+    function complete(){
+        clearInterval(timer);
+        timer = null;
+    }
 }
 
 //Mouse over behaviour for works
