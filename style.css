@@ -230,4 +230,7 @@ span.fade{
     .navbar{
         flex-direction: column ;
     }
+    .nav_links{
+        flex-direction: column;
+    }
 }
